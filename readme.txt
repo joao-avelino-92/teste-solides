@@ -37,12 +37,22 @@ Tutorial para restaurar o backup do banco no mysql e clonar a aplicação do rep
 	
 	bundle install
 
-6 - Caso ocorra algum aviso do Yarn, executar o comando "yarn install" ou atualizar a versão do Yarn.
+6 - Executar via terminal o comando:
+	
+	rake db:create 
 
-7 - Para rodar a aplicação deve-se executar o comando:
+	Se a restauração do arquivo DUMP foi feito deve aparecer a mensagem avisando que a database já existe.
+
+7 - Executar via terminal o comando: 
+	
+	rake db:migrate
+
+8 - Caso ocorra algum aviso do Yarn, executar o comando "yarn install" ou atualizar a versão do Yarn.
+
+9 - Para rodar a aplicação deve-se executar o comando:
 	
 	rails s
 
-8 - Para acessar a aplicação via navegador o endereço é: 
+10 - Para acessar a aplicação via navegador o endereço é: 
 	
 	localhost:3000
